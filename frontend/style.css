@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button:first-of-type { background-color: #0d6efd; /* Blue Search */ }
+button:last-of-type { background-color: #198754; /* Green Report */ }
+button:hover { opacity: 0.9; }
+
+/* List Container */
+#content, #overall {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-height: 300px;
+}
+
+/* Student Rows */
+.student-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.student-name {
+    font-weight: 500;
+    width: 150px;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    width: 250px;
+}
+.radio-group label { cursor: pointer; }
+
+/* Status Icons */
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    width: 150px;
+}
+.present-text { color: #198754; }
+.absent-text { color: #dc3545; }
+
+/* Mark Button */
+.btn-mark {
+    background-color: #e67e22 !important; /* Orange */
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+}
