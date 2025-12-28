@@ -5,6 +5,7 @@ exports.getAttendanceByDate = async (req, res) => {
   const date = req.params.date;
 
   const records = await Attendance.findAll({ where: { date } });
+  console.log(records);
 
   // Merge fixed students + attendance
   const result = students.map(s => {
@@ -15,7 +16,7 @@ exports.getAttendanceByDate = async (req, res) => {
       status: record ? record.status : null
     };
   });
-
+console.log(result);
   res.json(result);
 };
 
@@ -42,6 +43,7 @@ exports.markAttendance = async (req, res) => {
 
 exports.getOverallAttendance = async (req, res) => {
   const records = await Attendance.findAll();
+  console.log(records);
 
   const report = students.map(s => {
     const studentRecords = records.filter(r => r.studentId === s.id);

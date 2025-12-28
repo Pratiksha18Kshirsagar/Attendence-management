@@ -1,12 +1,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #fafaf3;
     padding: 20px;
     margin: 0;
 }
 
 header {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -30,19 +30,19 @@ button {
     cursor: pointer;
     color: white;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
 }
 
-button:first-of-type { background-color: #0d6efd; /* Blue Search */ }
-button:last-of-type { background-color: #198754; /* Green Report */ }
+button:first-of-type { background-color: #e7249c; /* Blue Search */ }
+button:last-of-type { background-color: #30ba35; /* Green Report */ }
 button:hover { opacity: 0.9; }
 
 /* List Container */
 #content, #overall {
-    background: white;
+    background: rgb(250, 248, 250);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(212, 32, 32, 0.1);
     min-height: 300px;
 }
 
